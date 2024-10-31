@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\MidasXMedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\wwwroot\\assets\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\wwwroot\\assets\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\wwwroot\\assets\\js\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\wwwroot\\assets\\js\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|e:\\midasxmedia\\project_booking_vehicle\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|E:\\MidasXMedia\\project_booking_vehicle\\wwwroot\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BAEA8A34-AB92-469F-95C7-07D47AA20153}|Project_Booking_Vehicle\\MidasXMedia.csproj|solutionrelative:project_booking_vehicle\\wwwroot\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\appsettings.json",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\appsettings.json",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\appsettings.json",
+              "RelativeToolTip": "Project_Booking_Vehicle\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-16T13:16:30.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "custom.js",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\js\\custom.js",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\wwwroot\\js\\custom.js",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\js\\custom.js",
+              "RelativeToolTip": "Project_Booking_Vehicle\\wwwroot\\js\\custom.js",
+              "ViewState": "AQIAABoAAAAAAAAAAAAiwDIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-16T02:45:32.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "owl.carousel.min.js",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js",
+              "RelativeToolTip": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\owl.carousel.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-16T02:39:13.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "jquery.js",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\jquery.js",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\jquery.js",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\jquery.js",
+              "RelativeToolTip": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\jquery.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-16T02:39:12.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "custom.js",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\custom.js",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\custom.js",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\js\\custom.js",
+              "RelativeToolTip": "Project_Booking_Vehicle\\wwwroot\\assets\\js\\custom.js",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwDMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-16T02:33:07.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\wwwroot\\assets\\css\\style.css",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\wwwroot\\assets\\css\\style.css",
+              "RelativeToolTip": "Project_Booking_Vehicle\\wwwroot\\assets\\css\\style.css",
+              "ViewState": "AQIAAG0BAAAAAAAAAAD4v5IBAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-16T02:22:21.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "E:\\MidasXMedia\\Project_Booking_Vehicle\\Views\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "Project_Booking_Vehicle\\Views\\Home\\Home.cshtml",
+              "ToolTip": "E:\\MidasXMedia\\Project_Booking_Vehicle\\Views\\Home\\Home.cshtml",
+              "RelativeToolTip": "Project_Booking_Vehicle\\Views\\Home\\Home.cshtml",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAkwHoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T07:42:05.122Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

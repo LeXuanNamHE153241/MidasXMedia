@@ -1,0 +1,656 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+    <!-- title of site -->
+    <title>Booking Vehicle</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="~/assets/logo/favicon.png" />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="~/assets/css/linearicons.css">
+
+    <!--flaticon.css-->
+    <link rel="stylesheet" href="~/assets/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="~/assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       
+</head>
+        
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!--welcome-hero start -->
+    <section id="home" class="welcome-hero">
+
+        <!-- top-area Start -->
+        <div class="top-area">
+            <div class="header-area">
+                <!-- Start Navigation -->
+                <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+                    <div class="container">
+
+                        <!-- Start Header Navigation -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="/Home">Midas x Media<span></span></a>
+
+                        </div><!--/.navbar-header-->
+                        <!-- End Header Navigation -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                                <li class="scroll active"><a href="#home">Trang chủ</a></li>
+                                @* @if (ViewBag.RoleID != null)
+                                { *@
+                                    <li class="scroll"><a href="#service">Bảng Giá</a></li>
+                                    <li class="scroll"><a href="#featured-cars">Dịch Vụ</a></li>
+                                    <li class="scroll"><a href="#new-cars">Dịch vụ khác</a></li>
+                                    <li ><a href="https://m.me/165197176668989" >Liên hệ</a></li>
+                                    @* @if(ViewBag.RoleID == "1"){
+                                        <li><a href="/Booking/ListBookingByUser">List Order By User</a></li>
+                                        <li><a href="/Booking/ListHistoryBookingByUser">List History Order By User</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="/Booking/ListBooking">List Order</a></li>
+                                    } *@
+                                    
+                                    
+                                   @*  <li><a style="color:orangered" href="#">Hello @ViewBag.FullName</a></li>
+                                    <li><a href="/Login/Logout">Logout</a></li> *@
+                                @* } *@
+                               
+
+
+                            </ul><!--/.nav -->
+                        </div><!-- /.navbar-collapse -->
+                    </div><!--/.container-->
+                </nav><!--/nav-->
+                <!-- End Navigation -->
+            </div><!--/.header-area-->
+            <div class="clearfix"></div>
+
+
+        </div><!-- /.top-area-->
+        <!-- top-area End -->
+
+        <div class="container">
+            <div class="welcome-hero-txt">
+                <h2>"Turning whatsoever we touched to gold"</h2>
+                <p>
+                    Chúng tôi muốn mang lại giá trị "quý như vàng" đến những khoảng khắc đặc biệt của quý khách
+                </p>
+                <button class="welcome-btn" onclick="window.location.href='https://www.facebook.com/profile.php?id=61552216231920'">Liên Hệ Với Chúng Tôi</button>
+            </div>
+        </div>
+        @* @if (ViewBag.RoleID != null)
+        { *@
+            <form action="/Home/SearchVehicle" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="model-search-content">
+                                <div class="row">
+                                    <div class="col-md-offset-1 col-md-2 col-sm-12">
+                                        @*\\input search by year*@
+
+                                        <div class="single-model-search">
+                                            <h2>select year</h2>
+                                            <div class="model-select-icon">
+                                                <select name="year" class="form-control">
+
+                                                    <option value="default">year</option><!-- /.option-->
+                                                    <option value="2019">2019</option><!-- /.option-->
+                                                    <option value="2018">2018</option><!-- /.option-->
+                                                    <option value="2017">2017</option><!-- /.option-->
+                                                    <option value="2016">2016</option><!-- /.option-->
+
+                                                </select><!-- /.select-->
+                                            </div><!-- /.model-select-icon -->
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-offset-1 col-md-2 col-sm-12">
+                                        <div class="single-model-search">
+                                            <h2>select Type</h2>
+                                            <div class="model-select-icon">
+                                                <select name="type" class="form-control">
+                                                    <option value="all">All</option><!-- /.option-->
+                                                    @foreach (var t in ViewBag.VehicleTypes)
+                                                    {
+                                                        <option value="@t.TypeId">@t.TypeName</option>
+
+                                                        <!-- /.option-->
+                                                    }
+                                                </select><!-- /.select-->
+                                            </div><!-- /.model-select-icon -->
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="single-model-search">
+                                            <button class="welcome-btn model-search-btn">
+                                                search
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        @* } *@
+
+    </section><!--/.welcome-hero-->
+    @* @if (ViewBag.RoleID != null)
+    { *@
+        <!--welcome-hero end -->
+        <!--service start -->
+        <section id="service" class="service">
+            <div class="container">
+                <div class="service-content">
+                <img src="~/assets/images/banggia/banggia.jpg" />
+                    @* <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-service-item">
+                                <div class="single-service-icon">
+                                    <i class="flaticon-car"></i>
+                                </div>
+                                <h2><a href="#">largest dealership <span> of</span> motor</a></h2>
+                                <p>
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-service-item">
+                                <div class="single-service-icon">
+                                    <i class="flaticon-car-repair"></i>
+                                </div>
+                                <h2><a href="#">unlimited repair warrenty</a></h2>
+                                <p>
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-service-item">
+                                <div class="single-service-icon">
+                                    <i class="flaticon-car-1"></i>
+                                </div>
+                                <h2><a href="#">insurence support</a></h2>
+                                <p>
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div> *@
+                </div>
+            </div><!--/.container-->
+
+        </section>
+
+        <!--/.service-->
+        <!--service end-->
+        <!--new-cars start -->
+        <section id="new-cars" class="new-cars">
+            <div class="container">
+                <div class="section-header">
+                    <p>plan <span>your</span> perfect getaway</p>
+                    <h2>top travel destinations</h2>
+                </div><!--/.section-header-->
+                <div class="new-cars-content">
+                    <div class="owl-carousel owl-theme" id="new-cars-carousel">
+                        <div class="new-cars-item">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                           @*  <img src="~/assets/images/dulich/phuyen.png" alt="img" /> *@
+                                        <iframe width="700" height="400" src="https://www.youtube.com/embed/Zf5hNAMxXvk?vq=hd1080&rel=0" title="Hà Giang" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <div style="display: flex;">
+                                            <img src="~/assets/images/dulich/caobang.jpg" alt="brand-image" style="width: 350px; height: 300px; margin-right: 5px; border: 1px solid black; padding: 3px;" />
+                                            <img src="~/assets/images/dulich/phuquoc.jpg" alt="brand-image" style="width: 350px; height: 300px; border: 1px solid black; padding: 3px;" />
+                                            
+                                        </div>
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                            <h2><a href="#"> Hà Giang</a></h2>
+                                            <p>
+                                            Hà Giang là một tỉnh nằm ở vùng núi phía Bắc Việt Nam, nổi tiếng với cảnh quan hùng vĩ và văn hóa đặc sắc của các dân tộc thiểu số. Những điểm đến nổi bật bao gồm Cao nguyên đá Đồng Văn, đèo Mã Pí Lèng, và cột cờ Lũng Cú, nơi du khách có thể trải nghiệm vẻ đẹp hoang sơ và hùng vĩ của thiên nhiên. Hà Giang là điểm đến lý tưởng cho những ai muốn khám phá vẻ đẹp tự nhiên nguyên sơ và văn hóa độc đáo của vùng cao Việt Nam.
+                                            </p>
+                                            <p class="new-cars-para2">
+                                            Hà Giang thu hút du khách với vẻ đẹp hoang sơ của núi rừng và sự bình yên của vùng cao phía Bắc Việt Nam.
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.single-new-cars-item-->
+                        </div><!--/.new-cars-item-->
+                    <div class="new-cars-item">
+                        <div class="single-new-cars-item">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12">
+                                    <div class="new-cars-img">
+                                        
+                                        <iframe width="700" height="400" src="https://www.youtube.com/embed/GpQ_byJ_WJU?rel=0" title="Felila" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <div style="display: flex;">
+                                            <img src="~/assets/images/dulich/caobang.jpg" alt="brand-image" style="width: 350px; height: 300px; margin-right: 5px; border: 1px solid black; padding: 3px;" />
+                                            <img src="~/assets/images/dulich/phuquoc.jpg" alt="brand-image" style="width: 350px; height: 300px; border: 1px solid black; padding: 3px;" />
+
+                                        </div>
+                                    </div><!--/.new-cars-img-->
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <div class="new-cars-txt">
+                                        <h2><a href="#"> Phượt Dài Ngày</a></h2>
+                                        <p>
+                                            Phu Yen is a coastal province in the south-central region of Vietnam, known for its pristine beaches and peaceful atmosphere. Famous spots include Bai Xep Beach, Ganh Da Dia, and the scenic Vung Ro Bay, making it an ideal location for those looking to explore Vietnam’s untouched natural beauty.
+                                        </p>
+                                        <p class="new-cars-para2">
+                                            Phu Yen captivates travelers with its untouched beaches and tranquil charm along Vietnam's central coast.
+                                        </p>
+                                        <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                            view details
+                                        </button>
+                                    </div><!--/.new-cars-txt-->
+                                </div><!--/.col-->
+                            </div><!--/.row-->
+                        </div><!--/.single-new-cars-item-->
+                    </div><!--/.new-cars-item-->
+                        <div class="new-cars-item">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                        
+                                        <iframe width="700" height="400" src="https://www.youtube.com/embed/XBLPlHzaEZw?vq=hd1080&rel=0" title="USESCO" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <div style="display: flex;">
+                                            <img src="~/assets/images/dulich/caobang.jpg" alt="brand-image" style="width: 350px; height: 300px; margin-right: 5px; border: 1px solid black; padding: 3px;" />
+                                            <img src="~/assets/images/dulich/phuquoc.jpg" alt="brand-image" style="width: 350px; height: 300px; border: 1px solid black; padding: 3px;" />
+
+                                        </div>
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                        <h2><a href="#">USESCO</a></h2>
+                                            <p>
+                                            UNESCO đóng vai trò quan trọng trong việc hỗ trợ các nỗ lực bảo vệ môi trường toàn cầu. Các chương trình của UNESCO giúp nâng cao nhận thức về tầm quan trọng của bảo vệ thiên nhiên, khuyến khích các quốc gia và cộng đồng tham gia vào các hoạt động bảo vệ môi trường và phát triển bền vững.
+
+                                            
+                                            </p>
+                                            <p class="new-cars-para2">
+                                            Bảo vệ môi trường là một hành trình cần sự nỗ lực không ngừng từ tất cả mọi người. Chúng ta có thể góp phần làm cho hành tinh trở nên xanh sạch hơn bằng những hành động nhỏ trong cuộc sống hàng ngày.
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.single-new-cars-item-->
+                        </div><!--/.new-cars-item-->
+                        <div class="new-cars-item">
+                            <div class="single-new-cars-item">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="new-cars-img">
+                                        
+                                        <iframe width="700" height="400" src="https://www.youtube.com/embed/cka8ALzTZiM?vq=hd1080&rel=0" title="Felila" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <div style="display: flex;">
+                                            <img src="~/assets/images/dulich/caobang.jpg" alt="brand-image" style="width: 350px; height: 300px; margin-right: 5px; border: 1px solid black; padding: 3px;" />
+                                            <img src="~/assets/images/dulich/phuquoc.jpg" alt="brand-image" style="width: 350px; height: 300px; border: 1px solid black; padding: 3px;" />
+
+                                        </div>
+                                        </div><!--/.new-cars-img-->
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="new-cars-txt">
+                                        <h2><a href="#">Vin đảo rều</a></h2>
+                                            <p>
+
+                                            Vinpearl Đảo Rều là một điểm đến nổi bật nằm tại tỉnh Khánh Hòa, miền Trung Việt Nam, nổi tiếng với vẻ đẹp tự nhiên hùng vĩ và các dịch vụ giải trí đa dạng. Đảo Rều thu hút du khách với những bãi biển trong xanh, cát trắng mịn và không khí trong lành, tạo điều kiện lý tưởng cho các hoạt động nghỉ dưỡng và vui chơi.
+
+                                            Điểm nổi bật của đảo Rều bao gồm Vinpearl Land với nhiều trò chơi giải trí hấp dẫn, khu vui chơi nước, và các hoạt động thể thao dưới nước. Bên cạnh đó, du khách còn có thể tham gia các tour khám phá thiên nhiên, tận hưởng vẻ đẹp hoang sơ của các bãi biển và rừng nhiệt đới.
+                                            </p>
+                                            <p class="new-cars-para2">
+                                            Vinpearl Đảo Rều không chỉ là một điểm đến lý tưởng cho những ai muốn thư giãn và vui chơi, mà còn mang đến cho du khách những trải nghiệm văn hóa đặc sắc của vùng biển miền Trung Việt
+                                            </p>
+                                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                                view details
+                                            </button>
+                                        </div><!--/.new-cars-txt-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.single-new-cars-item-->
+                        </div><!--/.new-cars-item-->
+                    </div><!--/#new-cars-carousel-->
+                </div><!--/.new-cars-content-->
+            </div><!--/.container-->
+
+        </section>
+
+        <!--/.new-cars-->
+        <!--new-cars end -->
+        <!--featured-cars start -->
+        <section id="featured-cars" class="featured-cars">
+            <div class="container">
+                <div class="section-header">
+                    <p>Những bộ ảnh đặc trưng</p>
+                    <h2>Hình Ảnh Tham Khảo</h2>
+                </div><!--/.section-header-->
+                <div class="featured-cars-content">
+                    <div class="row">
+                        @foreach (var v in ViewBag.Vehicle)
+                        {
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-featured-cars">
+                                    <div class="featured-img-box">
+                                        <div class="featured-cars-img">
+                                            <img src="assets/images/dulich/@v.Images" alt="cars">
+                                        </div>
+                                        <div class="featured-model-info">
+                                             <p>
+                                                @* model: @v.Model *@
+                                                <span class="featured-mi-span"> Location: @v.Brand</span>
+                                                @* automatic *@
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="featured-cars-txt">
+                                        <h2><a href="#">@v.Model</a></h2>
+                                        <p>
+                                            @v.Describe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+            </div><!--/.container-->
+
+        </section>
+        @* } *@
+        <!--/.featured-cars-->
+        <!--featured-cars end -->
+        <!-- clients-say strat -->
+        <section id="clients-say" class="clients-say">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Feedback khách hàng</h2>
+                </div><!--/.section-header-->
+                <div class="row">
+                    <div class="owl-carousel testimonial-carousel">
+                        @foreach (var o in ViewBag.Order)
+                        {
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="single-testimonial-box">
+                                <div class="testimonial-description">
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-img">
+                                            <img src="assets/images/clients/c1.png" alt="image of clients person" />
+                                        </div><!--/.testimonial-img-->
+                                    </div><!--/.testimonial-info-->
+                                    <div class="testimonial-comment">
+                                       
+                                            @*<p>
+                                                Xe:@o.Vehicle.Model
+                                            </p>*@
+                                        
+                                       
+                                        </div><!--/.testimonial-comment-->
+                                        <div class="testimonial-person">
+                                            <h2><a href="#">@o.User.Username</a></h2>
+                                            <h4>Đánh Giá:@o.Comment</h4>
+                                        </div><!--/.testimonial-person-->
+                                    </div><!--/.testimonial-description-->
+                                </div><!--/.single-testimonial-box-->
+                            </div>
+
+                            <!--/.col-->
+                        }
+                        
+                        
+                    </div><!--/.testimonial-carousel-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+
+        </section>
+
+        <!--/.clients-say-->
+        <!-- clients-say end -->
+        <!--brand strat -->
+    
+    <section id="brand" class="brand">
+        <div class="container">
+            <div class="brand-area">
+                <div class="owl-carousel owl-theme brand-item">
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br1.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br2.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br3.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br4.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br5.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br6.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+                </div><!--/.owl-carousel-->
+            </div><!--/.clients-area-->
+
+        </div><!--/.container-->
+
+    </section><!--/brand-->
+    <!--brand end -->
+    <!--blog start -->
+    <section id="blog" class="blog"></section><!--/.blog-->
+    <!--blog end -->
+    <!--contact start-->
+    <footer id="contact" class="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html">carvilla</a>
+                            </div>
+                            <p>
+                                Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.
+                            </p>
+                            <div class="footer-contact">
+                                <p>info@themesine.com</p>
+                                <p>+1 (885) 2563154554</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h2>about devloon</h2>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">career</a></li>
+                                <li><a href="#">terms <span> of service</span></a></li>
+                                <li><a href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="single-footer-widget">
+                            <h2>top brands</h2>
+                            <div class="row">
+                                <div class="col-md-7 col-xs-6">
+                                    <ul>
+                                        <li><a href="#">BMW</a></li>
+                                        <li><a href="#">lamborghini</a></li>
+                                        <li><a href="#">camaro</a></li>
+                                        <li><a href="#">audi</a></li>
+                                        <li><a href="#">infiniti</a></li>
+                                        <li><a href="#">nissan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 col-xs-6">
+                                    <ul>
+                                        <li><a href="#">ferrari</a></li>
+                                        <li><a href="#">porsche</a></li>
+                                        <li><a href="#">land rover</a></li>
+                                        <li><a href="#">aston martin</a></li>
+                                        <li><a href="#">mersedes</a></li>
+                                        <li><a href="#">opel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h2>news letter</h2>
+                            <div class="footer-newsletter">
+                                <p>
+                                    Subscribe to get latest news  update and informations
+                                </p>
+                            </div>
+                            <div class="hm-foot-email">
+                                <div class="foot-email-box">
+                                    <input type="text" class="form-control" placeholder="Add Email">
+                                </div><!--/.foot-email-box-->
+                                <div class="foot-email-subscribe">
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div><!--/.foot-email-icon-->
+                            </div><!--/.hm-foot-email-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            &copy; copyright.designed and developed by <a href="https://www.themesine.com/">themesine</a>.
+                        </p><!--/p-->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.footer-copyright-->
+        </div><!--/.container-->
+
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
+
+        </div><!--/.scroll-Top-->
+
+    </footer><!--/.contact-->
+    <!--contact end-->
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+    <script src="~/assets/js/jquery.js"></script>
+
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!--bootstrap.min.js-->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    <!-- bootsnav js -->
+    <script src="~/assets/js/bootsnav.js"></script>
+
+    <!--owl.carousel.js-->
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="~/assets/js/custom.js"></script>
+
+</body>
+
+</html>

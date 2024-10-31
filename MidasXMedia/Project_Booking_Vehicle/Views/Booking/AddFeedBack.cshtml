@@ -1,0 +1,160 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<!--font-family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<!-- title of site -->
+	<title>List Search Vehicle</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="~/assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="~/assets/css/linearicons.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="~/assets/css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="~/assets/css/animate.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="~/assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="~/assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="~/assets/css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<style>
+	table td {
+		padding: 5px 10px;
+		font-weight: 300;
+	}
+
+	input, textarea, select {
+		border: solid 1px #ddd;
+		padding: 5px 20px;
+		width: 100%;
+	}
+
+	select {
+		width: 180px;
+	}
+
+	input[type="submit"] {
+		width: auto;
+		background: black;
+		color: #fff;
+	}
+</style>
+
+<section id="featured-cars" class="featured-cars">
+	<div class="container">
+		<div class="section-header">
+
+			<h2>Form FeedBack:</h2>
+		</div><!--/.section-header-->
+		<div class="featured-cars-content">
+			<div class="row" style="text-align:center;margin-left:10%">
+				<form method="post" action="AddFeedBackAccess?OrderID=@ViewBag.Orders.OrderId&UserID=@ViewBag.Orders.User.UserId">
+					<table>
+						<tr>
+							<td>Tên của bạn</td>
+							<td>
+								<input type="text" value="@ViewBag.Orders.User.Username" disabled name="name" />
+							</td>
+						</tr>
+						<tr>
+							<td>Tên Xe:</td>
+							<td>
+
+								<input type="text" value="@ViewBag.Orders.Vehicle.Model" disabled name="model" />
+							</td>
+						</tr>
+						<tr>
+							<td>Hình Ảnh:</td>
+							<td>
+								<img style="height:420px;width420px;" src="~/assets/images/featured-cars/@ViewBag.Orders.Vehicle.Images" alt="cars">
+
+							</td>
+						</tr>
+						<tr>
+							<td>Start Date:</td>
+							<td>
+								<input type="text" name="stdate" id="startDate" value="@ViewBag.Orders.StartDate" disabled required />
+							</td>
+						</tr>
+						<tr>
+							<td>End Date:</td>
+							<td>
+								<input type="text" name="edate" id="endDate" value="@ViewBag.Orders.EndDate" disabled required />
+							</td>
+						</tr>
+						<tr>
+							<td>FeedBack Order Xe:</td>
+							<td style="text-align:left">
+								<h4>
+									Rate: <select name="rate" class="form-control">
+
+										<option value="default">1 Star</option><!-- /.option-->
+										<option value="2">2 Star</option><!-- /.option-->
+										<option value="3">3 Star</option><!-- /.option-->
+										<option value="4">4 Star</option><!-- /.option-->
+										<option value="5">5 Star</option><!-- /.option-->
+
+									</select>
+								</h4>
+								<h4>Comment:<textarea name="cmt" required maxlength="100"></textarea> </h4>
+							</td>
+						</tr>
+						
+
+						<tr>
+							<td></td>
+                            <td>
+                                <input type="submit" value="Add FeedBack" />
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+</section>

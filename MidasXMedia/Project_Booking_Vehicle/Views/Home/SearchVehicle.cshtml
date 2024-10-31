@@ -1,0 +1,108 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<!--font-family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<!-- title of site -->
+	<title>List Search Vehicle</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="~/assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="~/assets/css/linearicons.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="~/assets/css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="~/assets/css/animate.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="~/assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="~/assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="~/assets/css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<section id="featured-cars" class="featured-cars">
+	<div class="container">
+		<div class="section-header">
+			
+			<h2>List Search </h2>
+		</div><!--/.section-header-->
+		<div class="featured-cars-content">
+			<div class="row">
+				@foreach (var v in ViewBag.Vehicle)
+				{
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="~/assets/images/featured-cars/@v.Images" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: @v.Model
+										<span class="featured-mi-span"> Brand:@v.Brand</span>
+										<span class="featured-hp-span"> Color:@v.Color</span>
+										<span class="featured-hp-span"> Rate:@v.DailyRate</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a href="#">@v.Model</a></h2>
+								<h3>@v.Price$/days</h3>
+								<p>
+									@v.Describe
+								</p>
+							</div>
+							@if (ViewBag.RoleID == "1")
+							{
+													<button style="text-align:center;border-radius:3px;color:white;margin-left:37%;background-color:brown"><a href="/Booking/BookingVehicle?id=@v.VehicleId" style="color:white">Booking</a></button>
+							}
+						</div>
+					</div>
+				}
+
+			</div>
+
+		</div>
+	</div>
+	<button style="margin-left:48%;border:1px solid black"><a href="/Home">Home</a></button>
+</section>
